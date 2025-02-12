@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         .grid-container{
+            display:grid;
+            grid-template-columns: minmax(min-content,400px) minmax(150px, 1fr) 120px;
+            grid-template-rows: 150px 100px; /*specify each row height*/
+            gap:10px;
+        }
+        .grid_item{
+            background-color:red;
+            padding:20px;
+            align-items: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid_item">1</div>
+        <div class="grid_item">2</div>
+        <div class="grid_item">3</div>
+        <div class="grid_item">4</div>
+    </div>
+</body>
+</html>
