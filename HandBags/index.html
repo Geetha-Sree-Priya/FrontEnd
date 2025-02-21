@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handmade Bags</title>
+</head>
+<link href="styles.css" rel="stylesheet">
+<body>
+
+    <header>
+    <div class="topnav">
+        <h1><img src="https://cdn-icons-png.flaticon.com/128/5122/5122787.png" alt="handbag" height="50px">
+            HAND BAGS</h1>
+        <a href="#home">Home</a>
+        <a href="#news">New</a>
+        <a href="#bags">Bags</a>
+        <a href="#bagpacs">Bagpacs</a>
+        <a href="#cosmatic">Cosmatic Bags</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="#card" class="split"><img src="https://cdn-icons-png.flaticon.com/128/8866/8866182.png" alt="card" height="30px"></a>
+    </div><br>  
+    </header>
+
+    <main>
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <img src="bags001.jpg" style="width:100%">
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="bags002.jpg" style="width:100%">
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+        
+        </div>
+        <br>
+         
+        <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+        
+    <br><br>
+
+    <div class="container">
+        <div>
+            <img src="BAGS11.webp" alt="bag" width="300" height="300">
+          <div class="desc">Bagpack Mary</div>
+        </div>
+        <div>
+            <img src="BAGS014.webp" alt="bag" width="300" height="300">
+          <div class="desc">Bagpack Lily</div>
+        </div>
+        <div>
+            <img src="BAGS025.webp" alt="bag" width="300" height="300">
+          <div class="desc">Bagpack Emily</div>
+        </div>
+        <div>         
+            <img src="BAGS008.webp" alt="bag" width="300" height="300">
+          <div class="desc">Bagpack Sandra</div>
+        </div>
+        <div>
+            <img src="BAGS018.webp" alt="bag" width="300" height="300">
+          <div class="desc">Bag Mary</div>
+        </div>
+        <div>
+            <img src="BAGS022.webp" alt="bag" width="300" height="300">
+          <div class="desc">Bag Catherine</div>
+        </div>
+        <div>
+            <img src="BAGS018.webp" alt="bag" width="300" height="300">
+          <div class="desc">Bag Jenny</div>
+        </div>
+        <div>
+            <img src="BAGS024.webp" alt="bag" width="300" height="300">
+          <div class="desc">Bag Sandra</div>
+        </div>
+        <div>
+            <img src="BAGS006.webp" alt="bag" width="300" height="300">
+          <div class="desc">Cosmatic Bag Sandra</div>
+        </div>
+        <div>
+            <img src="BAGS012.webp" alt="bag" width="300" height="300">
+          <div class="desc">Cosmatic Bag Martha</div>
+        </div>
+        <div>
+            <img src="BAGS015.webp" alt="bag" width="300" height="300">
+          <div class="desc">Cosmatic Bag Emily</div>
+        </div>
+        <div> 
+            <img src="BAGS021.webp" alt="bag" width="300" height="300">
+          <div class="desc">Cosmatic Bag Mary</div>
+        </div>
+    </div>
+    <br>
+
+    <div class="image">
+        <img src="BAGS6548JPG.jpeg" alt="bag" width="100%">
+    </div>
+    <br>
+    </main>
+
+    <footer>
+    <div class="social-icons">
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/128/4922/4922978.png" alt="facebook" height="30px"></a>
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/128/4926/4926492.png" alt="twitter" height="30px"></a>
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/128/4401/4401402.png" alt="linkedin" height="30px"></a>
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/128/1400/1400487.png" alt="instagram" height="30px"></a>
+      </div>
+    </div>
+    <div class="footer-bottom">All rights reserved by geetha</div>
+    </footer>
+</body>
+</html>
